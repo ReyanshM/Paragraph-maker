@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph maker</title>
+</head>
+<body>
+    <center>
+        <h1>Paragraph maker</h1>
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <label>Input 1</label>
+                        <input id="1I1" type="text">
+                        <br>
+                        <br>
+                        <label>Input 2</label>
+                        <input id="1I2" type="text">
+                        <br>
+                        <br>
+                        <label>Input 3</label>
+                        <input id="1I3" type="text">
+                        <br>
+                        <br>
+                        <label>Input 4</label>
+                        <input id="1I4" type="text">
+                        <br>
+                        <br>
+                        <label>Input 5</label>
+                        <input id="1I5" type="text">
+                    </div>
+                </td>
+                <td>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                </td>
+                <td>
+                    <div>
+                        <label>Input 1</label>
+                        <input id="2I1" type="text">
+                        <br>
+                        <br>
+                        <label>Input 2</label>
+                        <input id="2I2" type="text">
+                        <br>
+                        <br>
+                        <label>Input 3</label>
+                        <input id="2I3" type="text">
+                        <br>
+                        <br>
+                        <label>Input 4</label>
+                        <input id="2I4" type="text">
+                        <br>
+                        <br>
+                        <label>Input 5</label>
+                        <input id="2I5" type="text">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button style="border-radius:5px;background-color:rgb(123, 202, 233);font-size:14px;" onclick="create()">Create</button>
+        <br>
+        <br>
+        <p id="para1"></p>
+        <br>
+        <p id="para2"></p>
+    </center>
+    <script>
+        var paragraph1=[];
+        var paragraph2=[];
+        function create(){
+            paragraph1.push(document.getElementById("1I1").value);
+            paragraph1.push(document.getElementById("1I2").value);
+            paragraph1.push(document.getElementById("1I3").value);
+            paragraph1.push(document.getElementById("1I4").value);
+            paragraph1.push(document.getElementById("1I5").value);
+            document.getElementById("para1").textContent=paragraph1.join(" ");
+            paragraph2.push(document.getElementById("2I1").value);
+            paragraph2.push(document.getElementById("2I2").value);
+            paragraph2.push(document.getElementById("2I3").value);
+            paragraph2.push(document.getElementById("2I4").value);
+            paragraph2.push(document.getElementById("2I5").value);
+            document.getElementById("para2").textContent=paragraph2.join(" ");
+            paragraph1=[];
+            paragraph2=[];
+        }
+    </script>
+</body>
+</html>
